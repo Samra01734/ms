@@ -1,0 +1,108 @@
+/* Whole Home Page Layout */
+.home-container {
+  background: linear-gradient(135deg, #e0f7fa, #b3e5fc, #81d4fa); /* Light blue gradient */
+  min-height: 100vh; /* Full page height */
+  display: flex;
+  flex-direction: column;
+  color: #1a1a1a; /* Dark text for readability */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main content under navbar */
+.home-content {
+  flex: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Smooth fade-in animation */
+.home-content {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Home Page Styling */
+.home-container {
+  padding: 2rem;
+  text-align: center;
+  background: #f9faff;
+  min-height: 80vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Section */
+.home-header {
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+.home-header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #1e3a8a; /* Navy Blue */
+  margin-bottom: 0.5rem;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section with Cards */
+.home-sections {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  width: 260px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  color: #1e40af;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Simple fadeIn animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
